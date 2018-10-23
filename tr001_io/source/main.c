@@ -7,7 +7,7 @@
 #define F_CPU 16000000UL
 #endif
 
-#define DELAY_TIME 5
+#define DELAY_TIME 50
 #define sbi(x, y) x |= _BV(y)
 #define cbi(x, y) x &= ~(_BV(y))
 #define tbi(x, y) x ^= _BV(y)
@@ -39,6 +39,6 @@ int main(void)
 		else if (pwm == 0x00)
 			up = true;
 
-		_delay_ms(10);
+		_delay_ms(DELAY_TIME);
 	}
 }
