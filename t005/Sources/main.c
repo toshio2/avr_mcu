@@ -85,9 +85,3 @@ ISR(USART_TX_vect)
 	}
 }
 
-
-
-
-
-
-
